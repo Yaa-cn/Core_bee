@@ -24,8 +24,8 @@ const siteSession = session({
         ttl: 60 * 60 * 24
     }),
     cookie: {
-        // secure: true,
-        // sameSite: 'none'
+        secure: true,
+        sameSite: 'none'
     }
 })
 
@@ -39,8 +39,8 @@ const dashSession = session({
         ttl: 60 * 60 * 24
     }),
     cookie: {
-        // secure: true,
-        // sameSite: 'none'
+        secure: true,
+        sameSite: 'none'
     }
 })
 
