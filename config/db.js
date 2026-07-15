@@ -11,9 +11,10 @@ const connectDatabase = async () => {
 
         cache = await mongoose.connect(process.env.MONGO_URI)
         console.log("Database connected successfully")
+        console.log(process.env.MONGO_URI)
 
         return cache
-        
+
     } catch (error) {
         console.error("Database connection failed", error.message)
         process.exit(1)

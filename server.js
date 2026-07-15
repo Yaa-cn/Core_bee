@@ -49,7 +49,7 @@ app.use(cors({
     credentials: true
 }))
 
-connectDatabase()
+await connectDatabase()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use("/api", siteSession, routes)
